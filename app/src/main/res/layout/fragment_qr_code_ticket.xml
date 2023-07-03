@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Fragments.QrCodeTicketFragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <com.vipulasri.ticketview.TicketView
+            android:id="@+id/ticketView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:ticketBorderColor="@color/colorAccent"
+            app:ticketBorderWidth="1dp"
+            app:ticketCornerType="rounded"
+            app:ticketDividerPadding="0dp"
+            app:ticketDividerType="dash"
+            app:ticketElevation="8dp"
+            app:ticketOrientation="horizontal"
+            app:ticketScallopPositionPercent="60"
+            app:ticketScallopRadius="10dp"
+            app:ticketShowBorder="false"
+            app:ticketShowDivider="true" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.60065466" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:padding="40dp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="60dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/qrcode"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:id="@+id/image"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="@color/white"
+                    android:layout_centerInParent="true"
+                    />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/ticketID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="6yguhvg"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                android:textColor="@color/grey_60" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:padding="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/ticketView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Passenger(s)"
+                    android:layout_gravity="left"
+                    android:gravity="left"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1" />
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="12/12/12"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/personbooked"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="p1"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                android:textColor="@color/grey_60" />
+
+            <TextView
+                android:id="@+id/passenger1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="p1"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                android:textColor="@color/grey_60" />
+
+            <TextView
+                android:id="@+id/passenger2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="p2"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                android:textColor="@color/grey_60" />
+
+            <TextView
+                android:id="@+id/passenger3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="p3"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                android:textColor="@color/grey_60" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="From"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                        android:textColor="@color/grey_90" />
+
+                    <TextView
+                        android:id="@+id/source"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Accra"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                        android:textColor="@color/grey_60" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@color/material_grey_300" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="To"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                        android:textColor="@color/grey_90" />
+
+                    <TextView
+                        android:id="@+id/destination"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Dodowa"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                        android:textColor="@color/grey_60" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@color/material_grey_300" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Price"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                        android:textColor="@color/grey_90" />
+
+                    <TextView
+                        android:id="@+id/price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="12gh"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                        android:textColor="@color/grey_60" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Arrival Time"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                        android:textColor="@color/grey_90" />
+
+                    <TextView
+                        android:id="@+id/arrivaltime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="9:00AM"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                        android:textColor="@color/grey_60" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@color/material_grey_300" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Departure Time"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                        android:textColor="@color/grey_90" />
+
+                    <TextView
+                        android:id="@+id/departuretime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="10:00AM"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                        android:textColor="@color/grey_60" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@color/material_grey_300" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Status"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                        android:textColor="@color/grey_90" />
+
+                    <TextView
+                        android:id="@+id/booking_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Paid"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                        android:textColor="@color/grey_60" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/saveqrcode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_rect_primary"
+            android:text="SAVE"
+            android:textStyle="bold"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

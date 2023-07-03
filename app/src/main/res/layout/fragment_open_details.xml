@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:context=".Fragments.OpenDetailsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/spacing_xlarge">
+
+                <ImageView
+                    android:id="@+id/newspreviewpic"
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_picture"/>
+
+                <TextView
+                    android:id="@+id/previewtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TRAIN NAME"
+                    android:layout_marginTop="@dimen/spacing_smlarge"
+                    android:layout_gravity="left"
+                    android:textAlignment="viewStart"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+                    android:textColor="@color/grey_40"
+                    tools:ignore="RtlCompat" />
+
+                <TextView
+                    android:id="@+id/previewdesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TRAIN NAME"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="15dp"
+                    android:justificationMode="inter_word"
+                    android:textSize="20dp"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                    android:textColor="@color/grey_40" />
+
+                <TextView
+                    android:id="@+id/previewcategory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TRAIN NAME"
+                    android:layout_gravity="left"
+                    android:textAlignment="viewEnd"
+                    android:layout_marginTop="15dp"
+                    android:textSize="20dp"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                    android:textColor="@color/grey_40"
+                    tools:ignore="RtlCompat" />
+                <TextView
+                    android:id="@+id/previewdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TRAIN NAME"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="20dp"
+                    android:textAlignment="viewStart"
+                    android:textSize="20dp"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                    android:textColor="@color/grey_40"
+                    tools:ignore="RtlCompat" />
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

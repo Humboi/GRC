@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:scrollbars="none"
+    android:id="@+id/nested_scroll_view"
+    android:scrollingCache="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Fragments.FAQFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/spacing_large"
+        android:layout_marginBottom="@dimen/spacing_large"
+        android:layout_marginTop="@dimen/spacing_large"
+        android:layout_marginRight="@dimen/spacing_large">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+            <!--            question 1-->
+        <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/spacing_medium"
+        android:layout_marginTop="@dimen/spacing_mlarge"
+        android:layout_marginRight="@dimen/spacing_medium"
+        android:layout_marginBottom="@dimen/spacing_medium"
+        android:visibility="visible"
+        app:cardCornerRadius="2dp"
+        app:cardElevation="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:gravity="center_vertical"
+                android:minHeight="?attr/actionBarSize"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="@dimen/spacing_large"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/quest1"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/grey_80" />
+
+                <ImageButton
+                    android:id="@+id/question1_toggle_text"
+                    android:layout_width="?attr/actionBarSize"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:tint="@color/grey_80"
+                    app:srcCompat="@drawable/ic_expand_arrow"
+                    tools:ignore="VectorDrawableCompat" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/question1_expand_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/spacing_large"
+                    android:text="@string/answer1"
+                    android:textSize="@dimen/spacing_large"
+                    app:fontFamily="Roboto" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/grey_10" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/question1_hide_text"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/hide" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+            <!--            question 2-->
+        <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/spacing_medium"
+        android:layout_marginTop="@dimen/spacing_mlarge"
+        android:layout_marginRight="@dimen/spacing_medium"
+        android:layout_marginBottom="@dimen/spacing_medium"
+        android:visibility="visible"
+        app:cardCornerRadius="2dp"
+        app:cardElevation="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:gravity="center_vertical"
+                android:minHeight="?attr/actionBarSize"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="@dimen/spacing_large"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/quest2"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/grey_80" />
+
+                <ImageButton
+                    android:id="@+id/question2_toggle_text"
+                    android:layout_width="?attr/actionBarSize"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:tint="@color/grey_80"
+                    app:srcCompat="@drawable/ic_expand_arrow"
+                    tools:ignore="VectorDrawableCompat" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/question2_expand_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/spacing_large"
+                    android:text="@string/answer2"
+                    android:textSize="@dimen/spacing_large"
+                    app:fontFamily="Roboto" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/grey_10" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/question2_hide_text"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/hide" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+            <!--            question 3-->
+        <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/spacing_medium"
+        android:layout_marginTop="@dimen/spacing_mlarge"
+        android:layout_marginRight="@dimen/spacing_medium"
+        android:layout_marginBottom="@dimen/spacing_medium"
+        android:visibility="visible"
+        app:cardCornerRadius="2dp"
+        app:cardElevation="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:gravity="center_vertical"
+                android:minHeight="?attr/actionBarSize"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="@dimen/spacing_large"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/quest3"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/grey_80" />
+
+                <ImageButton
+                    android:id="@+id/question3_toggle_text"
+                    android:layout_width="?attr/actionBarSize"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:tint="@color/grey_80"
+                    app:srcCompat="@drawable/ic_expand_arrow"
+                    tools:ignore="VectorDrawableCompat" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/question3_expand_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/spacing_large"
+                    android:text="@string/answer3"
+                    android:textSize="@dimen/spacing_large"
+                    app:fontFamily="Roboto" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/grey_10" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/question3_hide_text"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/hide" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
+
+

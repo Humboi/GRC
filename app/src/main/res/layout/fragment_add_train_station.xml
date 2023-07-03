@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context=".Fragments.AddTrainStationFragment"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/spacing_xlarge">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="STATION NAME"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                        android:textColor="@color/grey_40" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/stationname"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-4dp"
+                            android:layout_marginRight="-4dp"
+                            android:inputType="text"
+                            android:maxLength="50"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                            android:textColor="@color/colorPrimary"
+                            android:textStyle="bold"
+                            android:theme="@style/EditText.Grey" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <View
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/spacing_middle"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="STATION NUMBER"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                        android:textColor="@color/grey_40" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/stationnumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-4dp"
+                            android:layout_marginRight="-4dp"
+                            android:inputType="number"
+                            android:maxLength="50"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                            android:textColor="@color/colorPrimary"
+                            android:textStyle="bold"
+                            android:theme="@style/EditText.Grey" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/spacing_middle"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="STATION DESCRIPTION"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                        android:textColor="@color/grey_40" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/txt_area_dark_yellow"
+                        android:padding="@dimen/spacing_middle"
+                        android:textColorHint="@color/grey_40">
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/stationdesc"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:gravity="top"
+                            android:inputType="textMultiLine"
+                            android:maxLines="12"
+                            android:minLines="7"
+                            android:textColor="@color/colorPrimary"
+                            android:theme="@style/EditText.Yellow" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/spacing_middle"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="OPENING TIME"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                        android:textColor="@color/grey_40" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/openingtime"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-4dp"
+                            android:layout_marginRight="-4dp"
+                            android:hint="Click to add opening time"
+                            android:inputType="time"
+                            android:focusable="false"
+                            android:editable="false"
+                            android:maxLength="50"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                            android:textColor="@color/colorPrimary"
+                            android:textStyle="bold"
+                            android:theme="@style/EditText.Grey" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/spacing_middle"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CLOSING TIME"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                        android:textColor="@color/grey_40" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/closingtime"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="-4dp"
+                            android:layout_marginRight="-4dp"
+                            android:hint="Click to add closing time"
+                            android:inputType="time"
+                            android:focusable="false"
+                            android:editable="false"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                            android:textColor="@color/colorPrimary"
+                            android:textStyle="bold"
+                            android:theme="@style/EditText.Grey" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/spacing_large"/>
+                    <Button
+                        android:id="@+id/addtrainstation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn_rounded_primary"
+                        android:text="ADD TRAIN STATION"
+                        android:textColor="@android:color/white" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

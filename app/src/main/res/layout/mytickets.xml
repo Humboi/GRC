@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/grey_10"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@color/white"
+        android:minHeight="120dp"
+        app:cardCornerRadius="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/text_view_from_title"
+                style="@style/Moshey.Title"
+                android:text="FROM"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/text_view_my_from"
+                style="@style/Moshey.Subtext"
+                app:layout_constraintLeft_toLeftOf="@id/text_view_from_title"
+                app:layout_constraintTop_toBottomOf="@+id/text_view_from_title"
+                tools:text="Accra" />
+
+            <TextView
+                android:id="@+id/text_view_to_title"
+                style="@style/Moshey.Title"
+                android:text="TO"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/text_view_my_to"
+                style="@style/Moshey.Subtext"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_view_to_title"
+                tools:text="Koase" />
+
+            <TextView
+                android:id="@+id/text_view_ticket_id_title"
+                style="@style/Moshey.Title"
+                android:text="897393893829"
+                android:layout_marginTop="16dp"
+                android:textSize="12sp"
+                app:layout_constraintLeft_toLeftOf="@id/text_view_my_from"
+                app:layout_constraintTop_toBottomOf="@id/text_view_my_from" />
+
+            <TextView
+                android:id="@+id/text_view_ticket_id"
+                style="@style/Moshey.Subtext"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="@id/text_view_ticket_id_title"
+                app:layout_constraintTop_toBottomOf="@+id/text_view_ticket_id_title"
+                tools:text="#3ER456" />
+
+            <TextView
+                android:id="@+id/text_view_ticket_date_booked"
+                style="@style/Moshey.Subtext"
+                android:textSize="15dp"
+                android:textColor="@android:color/darker_gray"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_view_ticket_id_title"
+                tools:text="12th April 2019,12:17 PM" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group
+        android:id="@+id/grp_1"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="@string/menu_home" />
+    </group>
+
+    <group
+        android:id="@+id/grp_2"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_profile"
+            android:checked="true"
+            android:icon="@drawable/ic_person"
+            android:title="@string/menu_profile" />
+<!--        <item-->
+<!--            android:id="@+id/nav_notification"-->
+<!--            android:title="Notification"-->
+<!--            android:icon="@drawable/ic_notifications"-->
+<!--            app:actionLayout="@layout/badge_navigation_colored" />-->
+        <item
+            android:id="@+id/nav_book_ticket"
+            android:icon="@drawable/ic_receipt"
+            android:title="@string/menu_book_ticket"/>
+        <item
+            android:id="@+id/nav_view_ticket"
+            android:icon="@drawable/ic_visibility"
+            android:title="@string/menu_view_ticket"/>
+        <item
+            android:id="@+id/nav_fare_enquiry"
+            android:icon="@drawable/ic_vpn_lock"
+            android:title="@string/menu_fare_enquiry"/>
+        <item
+            android:id="@+id/nav_maps"
+            android:icon="@drawable/ic_location"
+            android:title="@string/menu_train_stations"/>
+    </group>
+
+
+    <item
+        android:checkableBehavior="single"
+        android:title="@string/menu_admin_operations">
+
+        <group
+            android:id="@+id/grp_3"
+            android:checkableBehavior="single">
+            <item
+                android:id="@+id/nav_insert_fare"
+                android:icon="@drawable/ic_playlist"
+                android:title="@string/menu_add_train" />
+            <item
+                android:id="@+id/nav_add_train_station"
+                android:icon="@drawable/ic_playlist"
+                android:title="@string/menu_add_train_stations" />
+<!--            <item-->
+<!--                android:id="@+id/nav_add_notification"-->
+<!--                android:icon="@drawable/ic_playlist"-->
+<!--                android:title="@string/menu_add_notification" />-->
+            <item
+                android:id="@+id/nav_dashboard_item"
+                android:icon="@drawable/ic_playlist"
+                android:title="@string/menu_add_dashborad_item" />
+        </group>
+    </item>
+
+    <group
+        android:id="@+id/grp_5"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_info"
+            android:title="@string/menu_about_us" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_settings"
+            android:title="@string/menu_settings" />
+        <item
+            android:id="@+id/nav_help"
+            android:icon="@drawable/ic_help"
+            android:title="@string/menu_help" />
+    </group>
+
+    <group
+        android:id="@+id/grp_6"
+        android:visible="false"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_history"
+            android:icon="@drawable/ic_help"
+            android:title="@string/menu_history" />
+    </group>
+
+</menu>

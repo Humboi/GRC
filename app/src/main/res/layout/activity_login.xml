@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/grey_10"
+    tools:context=".Activities.LoginActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@color/colorPrimary" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:padding="@dimen/spacing_mlarge">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:layout_width="140dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/spacing_mlarge"
+            android:layout_marginTop="@dimen/spacing_mlarge"
+            android:src="@drawable/logo"
+            app:civ_shadow="true"
+            app:civ_shadow_radius="0"
+            app:civ_border_width="2dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/proximanovaregular"
+            android:textSize="23dp"
+            android:text="GH RAILWAYS"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/spacing_middle"
+            android:visibility="visible"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/spacing_mlarge">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/spacing_xlarge"
+                    android:layout_marginTop="@dimen/spacing_middle"
+                    android:text="SIGN IN"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="EMAIL"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                    android:textColor="@color/grey_40" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="-4dp"
+                        android:layout_marginRight="-4dp"
+                        android:inputType="textEmailAddress"
+                        android:maxLength="50"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold"
+                        android:theme="@style/EditText.Grey" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/spacing_mlarge" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PASSWORD"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                    android:textColor="@color/grey_40" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="-4dp"
+                        android:layout_marginRight="-4dp"
+                        android:inputType="textPassword"
+                        android:maxLength="50"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold"
+                        android:theme="@style/EditText.Grey" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/spacing_mlarge" />
+
+                <Button
+                    android:id="@+id/btn_sign"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginLeft="-4dp"
+                    android:layout_marginRight="-4dp"
+                    android:background="@drawable/btn_rounded_primary"
+                    android:text="S I G N  I N"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold" />
+
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="@dimen/spacing_middle" />
+
+        <LinearLayout
+            android:id="@+id/LinearLayouts02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="2"
+            android:gravity="bottom|end">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New user? "
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                    android:textColor="@color/blue_grey_300" />
+
+                <TextView
+                    android:id="@+id/btn_sign_up"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:text="Sign Up"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                    android:textColor="@color/colorPrimaryLight"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/reset"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Forget password"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textColor="@color/colorAccent"
+                    android:textStyle="bold"
+                    android:textSize="16sp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
+

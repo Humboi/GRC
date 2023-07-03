@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:clipToPadding="false"
+    android:scrollbars="none"
+    android:scrollingCache="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Fragments.FareEnquiryFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/spacing_smlarge"
+        android:paddingRight="@dimen/spacing_smlarge"
+        android:orientation="vertical">
+        <View
+            android:layout_width="0dp"
+            android:layout_height="12dp" />
+        <androidx.cardview.widget.CardView
+            android:id="@+id/from_search_bar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/spacing_xmlarge"
+            app:cardBackgroundColor="@color/grey_3"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="0dp"
+            app:cardUseCompatPadding="false">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/spacing_xmlarge"
+                    android:layout_height="@dimen/spacing_xmlarge"
+                    android:padding="@dimen/spacing_middle"
+                    android:tint="@color/grey_40"
+                    app:srcCompat="@drawable/from" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/from_search_input"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:hint="Source"
+                    android:imeOptions="actionNext"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead">
+
+
+                </AutoCompleteTextView>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="12dp" />
+        <androidx.cardview.widget.CardView
+            android:id="@+id/to_search_bar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/spacing_xmlarge"
+            android:clipToPadding="false"
+            app:cardBackgroundColor="@color/grey_3"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="0dp"
+            app:cardUseCompatPadding="false">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/spacing_xmlarge"
+                    android:layout_height="@dimen/spacing_xmlarge"
+                    android:padding="@dimen/spacing_middle"
+                    android:tint="@color/grey_40"
+                    app:srcCompat="@drawable/dest" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/to_search_input"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:hint="Destination"
+                    android:imeOptions="actionDone"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead">
+
+
+                </AutoCompleteTextView>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="12dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/search"
+                        style="@style/Button.Primary.Borderless"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_rect_primary"
+                        android:text="SEARCH"
+                        android:textAllCaps="false"
+                        android:textSize="20dp"
+                        android:textColor="@android:color/white" />
+
+
+                </LinearLayout>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="12dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/all_fare"
+            android:layout_width="match_parent"
+            android:scrollbars="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

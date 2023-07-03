@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Fragments.ProfileFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="290dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:background="@color/colorPrimary"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/userprofile"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="45dp"
+                    android:src="@drawable/userphoto" />
+
+                <TextView
+                    android:id="@+id/profilefullname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="30dp"
+                    android:text="Wiliam Snoe"
+                    android:textColor="#fff"
+                    android:textSize="21sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="25dp">
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/ic_email_black_24dp" />
+
+                <TextView
+                    android:id="@+id/profileemail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:text="email"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/buttonEmail"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity=""
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:layout_toRightOf="@+id/email"
+                    android:drawableRight="@drawable/ic_edit_black_24dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal"
+                android:paddingLeft="25dp">
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/ic_phone_android_black_24dp" />
+
+                <TextView
+                    android:id="@+id/profilephonenumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:text="phone number"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/buttonPhoneNo"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity=""
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:layout_toRightOf="@+id/phonenumber"
+                    android:drawableRight="@drawable/ic_edit_black_24dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal"
+                android:paddingLeft="25dp">
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/ic_person"
+                    android:tint="@color/colorPrimary" />
+
+                <TextView
+                    android:id="@+id/profileusername"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:text="username"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/buttonUsername"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity=""
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:layout_toRightOf="@+id/username"
+                    android:drawableRight="@drawable/ic_edit_black_24dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal"
+                android:paddingLeft="25dp">
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/ic_public_black_24dp" />
+
+                <TextView
+                    android:id="@+id/profileaddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:text="Kasoa Amafrom"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/buttonAddress"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity=""
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:layout_toRightOf="@+id/address"
+                    android:drawableRight="@drawable/ic_edit_black_24dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/changePhoto"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/btn_rounded_primary"
+            android:text="Change Profile Photo"
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/deleteaccount"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_rounded_primary"
+            android:text="Delete Account"
+            android:textColor="#fff" />
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:clipToPadding="false"
+    android:scrollbars="none"
+    android:scrollingCache="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Fragments.ViewTrainsFragment">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="@dimen/spacing_medium" />
+        <androidx.cardview.widget.CardView
+            android:id="@+id/search_bar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/spacing_xmlarge"
+            android:layout_margin="@dimen/spacing_mlarge"
+            android:clipToPadding="false"
+            app:cardBackgroundColor="@color/grey_3"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="0dp"
+            app:cardUseCompatPadding="false">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/spacing_xmlarge"
+                    android:layout_height="@dimen/spacing_xmlarge"
+                    android:padding="@dimen/spacing_middle"
+                    android:tint="@color/grey_40"
+                    app:srcCompat="@drawable/ic_search" />
+
+                <EditText
+                    android:id="@+id/search_input"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:hint="Type train name"
+                    android:imeOptions="actionSearch"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead">
+
+                    <requestFocus />
+
+                </EditText>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/all_train"
+            android:layout_width="match_parent"
+            android:scrollbars="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_height="wrap_content"/>
+
+
+        <!--                no search results-->
+        <RelativeLayout
+            android:id="@+id/noitem"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spacing_large" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/bg_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:tint="@color/colorPrimary"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="-42dp"
+                    android:src="@drawable/bg_no_item_city" />
+
+                <LinearLayout
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/spacing_xlarge"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_large"
+                        android:text="No Data Available"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_medium"
+                        android:text="Try again later"
+                        android:textAlignment="center"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/colorPrimary" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
